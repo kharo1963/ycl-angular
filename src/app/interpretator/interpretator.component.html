@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang = "ru">
+<body>
+
+<div>
+  <form method="POST">
+    <button type="submit" (click)="handleAddSample()" name="addSample">Загрузить образец программы</button>
+  </form>
+  <p> </p>
+  <form method="POST" enctype="multipart/form-data" action="/">
+    <div>
+      <label>Введите исходный текст программы в окне редактирования или выберите файл для интерпретации или загрузите образец программы</label>
+      <p> </p>
+      <label for = "sourceText">Окно редактирования:____________________________________________________________________________Результат вычислений:</label>
+      <br>
+      <textarea [(ngModel)]="sourceText" rows=32  cols=100  name="sourceText" id="sourceText"></textarea>
+      <textarea [(ngModel)]="resultText" rows=32  cols=60   name="resultText" id="resultText"></textarea>
+      <br>
+    </div>
+    <p> </p>
+    <table>
+      <tr><td><input type="file" (change)="handleFileInput($event)" name="file" /></td></tr>
+    </table>
+    <p> </p>
+    <input type="submit" (click)="handleInterpret()" value="Интерпретировать" />
+  </form>
+</div>
+</body>
+</html>
