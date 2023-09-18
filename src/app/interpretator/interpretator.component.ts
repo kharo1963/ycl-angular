@@ -21,7 +21,8 @@ export class InterpretatorComponent implements OnInit {
   fileToUpload:any;
 
 //  private sourceTextURL = '../assets/source-text/m-ext-gcd.txt';
-  private sourceTextURL = 'm-ext-gcd.txt';
+  private sourceTextURL = './assets/source-text/m-ext-gcd.txt';
+//   private sourceTextURL = 'm-ext-gcd.txt';
 //   private interpretatorURL = 'http://localhost:8080/';
   private interpretatorURL = 'https://bootiml-production.up.railway.app/';
 
