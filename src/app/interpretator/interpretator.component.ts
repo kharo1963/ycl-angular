@@ -22,7 +22,7 @@ export class InterpretatorComponent implements OnInit {
   fileToUpload:any;
 
 //  private sourceTextURL = '../assets/source-text/m-ext-gcd.txt';
-  private sourceTextURL = 'docs/assets/source-text/m-ext-gcd.txt';
+  private sourceTextURL = 'assets/source-text/m-ext-gcd.txt';
   private interpretatorURL = environment.interpretatorURL;
 
    openVideoPage () {
