@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-interpretator',
@@ -21,10 +22,8 @@ export class InterpretatorComponent implements OnInit {
   fileToUpload:any;
 
 //  private sourceTextURL = '../assets/source-text/m-ext-gcd.txt';
-  private sourceTextURL = './docs/assets/source-text/m-ext-gcd.txt';
-//   private sourceTextURL = 'm-ext-gcd.txt';
-//   private interpretatorURL = 'http://localhost:8080/';
-  private interpretatorURL = 'https://bootiml-production.up.railway.app/';
+  private sourceTextURL = 'docs/assets/source-text/m-ext-gcd.txt';
+  private interpretatorURL = environment.interpretatorURL;
 
    openVideoPage () {
       console.log('openVideoPage');
