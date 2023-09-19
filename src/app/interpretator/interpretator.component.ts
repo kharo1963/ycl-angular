@@ -21,8 +21,7 @@ export class InterpretatorComponent implements OnInit {
   resultVideo64 = "";
   fileToUpload:any;
 
-//  private sourceTextURL = '../assets/source-text/m-ext-gcd.txt';
-  private sourceTextURL = 'assets/source-text/m-ext-gcd.txt';
+  private sourceTextURL = environment.sourceTextURL;
   private interpretatorURL = environment.interpretatorURL;
 
    openVideoPage () {
